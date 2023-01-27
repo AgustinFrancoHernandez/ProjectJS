@@ -1,3 +1,5 @@
+// Create the array for the localStorage
+let localStorageProducts = [];
 //Show the product
 const conteinerProducts = document.querySelector("#shop-content")
 function loadProduct () {
@@ -58,7 +60,7 @@ function ready(){
         let button = addCart[i];
         button.addEventListener("click", addCartClicked);
     }
-    
+
     // Funcionamiento del boton de compra
     document
         .getElementsByClassName("btn-buy")[0]
@@ -80,6 +82,7 @@ function buyButtonClicked() {
 function removeCartItem(event){
     let buttonClicked = event.target;
     buttonClicked.parentElement.remove(); 
+
     updateTotal();
 }
 
@@ -89,7 +92,13 @@ function quantityChanged(event) {
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1;
     } 
+    
+    localStorageProducts.push(input.value);
+    
+    saveLocal();
+
     updateTotal();
+  
 }
 
 // Add to carrito
@@ -99,8 +108,14 @@ function addCartClicked (event) {
     let title = shopProducts.getElementsByClassName("product-title")[0].innerText;
     let price = shopProducts.getElementsByClassName("price")[0].innerText;
     let productImg = shopProducts.getElementsByClassName("product-img")[0].src;
+    //  Push the array 
+    localStorageProducts.push(title, price);
+    // Save the localStorage
+    saveLocal ();
+    
     addProductToCart(title, price, productImg);
     updateTotal();
+    
 }
 
 function addProductToCart(title, price, productImg) {
@@ -131,6 +146,7 @@ function addProductToCart(title, price, productImg) {
     cartShopBox
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change", quantityChanged);
+
 }
 
 // Actualizar Total
@@ -150,5 +166,24 @@ function updateTotal(){
         total = Math.round(total * 100) / 100;
 
         document.getElementsByClassName("total-price")[0].innerText = "US$" + total;
+
+        localStorageProducts.push(total);
+        saveLocal();
+       
+}
+
+const saveLocal = () => {
+    localStorage.setItem('Product', JSON.stringify(localStorageProducts));
+};
+
+// obtenerLocalStorage();
+
+const obtenerLocalStorage = JSON.parse(localStorage.getItem('Product'))
+ 
+if (obtenerLocalStorage) {
+    console.log('hay')
+}else{
+    console.log('no hay')
+
 }
 
