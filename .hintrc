@@ -7,15 +7,11 @@
       "default",
       {
         "ignore": [
-          "scroll-behavior"
+          "scroll-behavior",
+          "scrollbar-color"
         ]
       }
     ],
-    "axe/forms": [
-      "default",
-      {
-        "label": "off"
-      }
-    ]
+    "no-protocol-relative-urls": "off"
   }
 }

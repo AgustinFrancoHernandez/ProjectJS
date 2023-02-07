@@ -1,0 +1,105 @@
+.modal-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 90vh;
+    color: var(--color1);
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 10vh;
+    scrollbar-color: none;
+}   
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    color: var(--color3);
+    width: 100%;
+}
+.modal-header-title {
+    justify-self: start;
+    margin-left: 1rem;
+}
+.modal-header-button {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid var(--color2);
+    align-items: center;
+    width: 98%;
+    margin: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.modal-container > div > img {
+    height: 100px;
+    width: auto;
+}
+.total-content {
+    color: var(--color3);
+    width: 100%;
+    background-color: var(--color1);
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.delete-product {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.p-total {
+    margin-left: 20px;
+}
+.p-unidades {
+    margin-left: 20px;
+    display: inline;
+    margin-right: 10px;
+}
+.p-precio {
+    margin-left: 20px;
+}
+.restar {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.sumar {
+    cursor: pointer;
+}
+.btn-buy {
+    padding: 12px 20px;
+    border: none;
+    background: var(--color2);
+    color: var(--color3);
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    color: var(--color2);
+    background: var(--color3);
+}
+.boton-pedido {
+    color: var(--color3);
+    width: 100%;
+    background-color: var(--color1);
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}

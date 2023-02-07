@@ -2,53 +2,51 @@
 <html lang="en">
 
 <head>
+    <title>Ecommerce Online</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link to css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!--Box Icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Projecto JavaSript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
-    <!-- Header -->
     <header>
-        <!-- Nav -->
-        <div class="nav container">
-            <a href="#" class="logo">TechPC</a>
-            <!-- CartIcon -->
-            <i class='bx bxs-cart' id="cart-icon"></i>
-            <!-- Cart -->
-            <div class="cart">
-                <p class="cart-title">Carrito</p>
-                <!-- Content -->
-                <div class="cart-content">
-
-                </div>
-                <!-- Total -->
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">US$ 0</div>
-                </div>
-                <!-- Buy Button -->
-                <button type="button" class="btn-buy">Comprar Ahora</button>
-                <!-- Cart Close -->
-                <i class='bx bx-x' id="close-cart"></i>
-            </div>
+        <!-- navbar -->
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 class="navbar-logo">TechPC</h1>
+                <h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito"></span>
+                </h1>
+            </nav>
         </div>
     </header>
-    <!-- Section Shop -->
+
+
+    <!-- banner -->
+    <!-- <div class="banner">
+        <div class="banner-container">
+            <h1>PC GAMER</h1>
+            <p>Los mejores armados</p>
+        </div>
+    </div> -->
+
+    <!-- CONTENIDO -->
     <section class="shop container">
         <h1 class="section-title">Computadoras Gamer</h1>
-        <div id="shop-content" class="shop-content">
-            <!-- Containers from stock.js -->
-        </div>
+        <div id="shopContent" class="shop-content"></div>
     </section>
-    <!-- LINK JS -->
-    <script src="data/stock.js"></script>
-    <script src="js/main.js"></script>
+
+    <!-- modal container -->
+    <div id="modal-container" class="modal-container"></div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/contadorcart.js"></script>
+    <script src="/js/declaraciones.js"></script>
+    <script src="/js/carrito.js"></script>
+    <script src="/js/localstorage.js"></script>
 </body>
 
 </html>
