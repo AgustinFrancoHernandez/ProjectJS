@@ -118,6 +118,7 @@ section {
 }
 .card {
     position: relative;
+    transition: 0.4s;
 }
 .card:hover {
     padding: 10px;
