@@ -1,10 +1,10 @@
 [
-    {"id": 1, "nombre": "Equipo Intel Pentium G6405 / 8GB Ram", "precio": 350, "img": "/img/pentiumg6400.jpg", "cantidad": 1},
-    {"id": 2, "nombre": "Intel Core I3 12100f / 16Gb / SSD / GTX1650", "precio": 690, "img": "./img/corei312100gtx1650.jpg", "cantidad": 1},
-    {"id": 3, "nombre": "Intel Core I5 10400f / 16gb / SSD / GTX1650", "precio": 775, "img": "./img/i510400fgtx1650.jpg", "cantidad": 1},
-    {"id": 4, "nombre": "Intel Core I5 12400f / 16Gb / SSD / RTX3050", "precio": 975, "img": "./img/i512400frtx3050.jpg", "cantidad": 1},
-    {"id": 5, "nombre": "Intel Core I5 10400f / 16Gb / SSD / RTX3060", "precio": 1250, "img": "./img/i510400frtx3060.jpg", "cantidad": 1},
-    {"id": 6, "nombre": "Intel Core I7 12700kf / 16Gb / SSD / RTX3070", "precio": 1590, "img": "./img/i712700rtx3070.jpg", "cantidad": 1},
-    {"id": 7, "nombre": "Intel Core I9 10900 / 16Gb / SSD / RTX3060Ti", "precio": 1900, "img": "./img/i910900rtx3060ti.jpg", "cantidad": 1},
+    {"id": 1, "nombre": "Equipo Intel Pentium G6405 / 8GB Ram", "precio": 350, "img": "../img/pentiumg6400.jpg", "cantidad": 1},
+    {"id": 2, "nombre": "Intel Core I3 12100f / 16Gb / SSD / GTX1650", "precio": 690, "img": "../img/corei312100gtx1650.jpg", "cantidad": 1},
+    {"id": 3, "nombre": "Intel Core I5 10400f / 16gb / SSD / GTX1650", "precio": 775, "img": "../img/i510400fgtx1650.jpg", "cantidad": 1},
+    {"id": 4, "nombre": "Intel Core I5 12400f / 16Gb / SSD / RTX3050", "precio": 975, "img": "../img/i512400frtx3050.jpg", "cantidad": 1},
+    {"id": 5, "nombre": "Intel Core I5 10400f / 16Gb / SSD / RTX3060", "precio": 1250, "img": "../img/i510400frtx3060.jpg", "cantidad": 1},
+    {"id": 6, "nombre": "Intel Core I7 12700kf / 16Gb / SSD / RTX3070", "precio": 1590, "img": "../img/i712700rtx3070.jpg", "cantidad": 1},
+    {"id": 7, "nombre": "Intel Core I9 10900 / 16Gb / SSD / RTX3060Ti", "precio": 1900, "img": "../img/i910900rtx3060ti.jpg", "cantidad": 1},
     {"id": 8, "nombre": "Intel Core I9 12900kf / 32Gb / SSD / RTX4080", "precio": 4210, "img": "../img/i912900rtx4080.jpg", "cantidad": 1}
 ]

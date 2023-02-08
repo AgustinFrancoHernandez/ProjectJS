@@ -75,7 +75,7 @@ const pintarCarrito = () => {
             Swal.fire({
                 title: 'Pedido recibido!',
                 text: 'Envíanos el comprobante de pago a techpc@email.com',
-                imageUrl: '/img/logo.png',
+                imageUrl: '../img/logo.png',
                 imageWidth: 250,
                 imageHeight: 250,
                 imageAlt: 'techpclogo',
