@@ -3,7 +3,7 @@ let carrito = JSON.parse(localStorage.getItem("pedido")) || [];
 
 // Traer productos desde ruta relativa y plasmarlo visualmente
 const getProducts = async () => {
-    const resp = await fetch('./productos.json');
+    const resp = await fetch('/./js/productos.json');
     const data = await resp.json();
 
     data.forEach((product) => {
