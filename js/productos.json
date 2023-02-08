@@ -6,5 +6,5 @@
     {"id": 5, "nombre": "Intel Core I5 10400f / 16Gb / SSD / RTX3060", "precio": 1250, "img": "./img/i510400frtx3060.jpg", "cantidad": 1},
     {"id": 6, "nombre": "Intel Core I7 12700kf / 16Gb / SSD / RTX3070", "precio": 1590, "img": "./img/i712700rtx3070.jpg", "cantidad": 1},
     {"id": 7, "nombre": "Intel Core I9 10900 / 16Gb / SSD / RTX3060Ti", "precio": 1900, "img": "./img/i910900rtx3060ti.jpg", "cantidad": 1},
-    {"id": 8, "nombre": "Intel Core I9 12900kf / 32Gb / SSD / RTX4080", "precio": 4210, "img": "./img/i912900rtx4080.jpg", "cantidad": 1}
+    {"id": 8, "nombre": "Intel Core I9 12900kf / 32Gb / SSD / RTX4080", "precio": 4210, "img": "../img/i912900rtx4080.jpg", "cantidad": 1}
 ]
